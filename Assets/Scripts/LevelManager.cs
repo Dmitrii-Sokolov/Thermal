@@ -89,8 +89,7 @@ public class LevelManager : MonoBehaviour
         enemy_pos.Set(width + 4 * offset, height + 4 * offset);
         box[0].size = enemy_pos;
 
-        //        FindObjectOfType<UIController>().SetWave(wave);
-        FindObjectOfType<UIController>().SetWave(31);
+        FindObjectOfType<UIController>().SetWave(wave);
     }
 
     // Update is called once per frame
@@ -133,7 +132,6 @@ public class LevelManager : MonoBehaviour
                 wave++;
 
                 FindObjectOfType<UIController>().SetWave(wave);
-                FindObjectOfType<UIController>().SetWave(42);
 
                 wave_count = 0;
             }

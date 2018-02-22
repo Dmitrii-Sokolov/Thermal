@@ -34,7 +34,7 @@ public class Player : MonoBehaviour {
             Gun_new = (GameObject) Instantiate(Gun_prefab,transform.position + Gun_points[i], Quaternion.identity);
             Gun_new.transform.SetParent(transform);
             Guns.Add(Gun_new.GetComponent<Gun>());
-            Guns[i].Init(targets, PlayerPrefs.GetInt("Gun", 1));
+            Guns[i].Init(targets, PlayerPrefs.GetInt("Gun", 0));
         }
     }
 

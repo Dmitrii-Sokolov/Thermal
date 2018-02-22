@@ -45,7 +45,7 @@ public class UIController : MonoBehaviour {
         Mixer.SetFloat("Master", PlayerPrefs.GetFloat("VolumeLevel") * PlayerPrefs.GetInt("VolumeOn", 1) + 80 * (PlayerPrefs.GetInt("VolumeOn", 1) - 1));
         Mixer.SetFloat("Sound", PlayerPrefs.GetFloat("SoundLevel") * PlayerPrefs.GetInt("SoundOn", 1) + 80 * (PlayerPrefs.GetInt("SoundOn", 1) - 1));
         Mixer.SetFloat("Music", PlayerPrefs.GetFloat("MusicLevel") * PlayerPrefs.GetInt("MusicOn", 1) + 80 * (PlayerPrefs.GetInt("MusicOn", 1) - 1));
-        Instantiate(ships[PlayerPrefs.GetInt("Ship", 6)]);
+        Instantiate(ships[PlayerPrefs.GetInt("Ship", 1)]);
     }
 
     void Update()
