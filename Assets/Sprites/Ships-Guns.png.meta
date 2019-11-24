@@ -1,38 +1,81 @@
 fileFormatVersion: 2
 guid: 7b3e5ea1442215e44a9135576dabfe3b
-timeCreated: 1471408590
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Ships-Guns_0
-    21300002: Ships-Guns_1
-    21300004: Ships-Guns_2
-    21300006: Ships-Guns_3
-    21300008: Ships-Guns_4
-    21300010: Ships-Guns_5
-    21300012: Ships-Guns_6
-    21300014: Ships-Guns_7
-    21300016: Ships-Guns_8
-    21300018: Ships-Guns_11
-    21300020: Ships-Guns_15
-    21300022: Ships-Guns_17
-    21300024: Ships-Guns_20
-    21300026: Ships-Guns_25
-    21300028: Ships-Guns_29
-    21300030: Ships-Guns_32
-    21300032: Ships-Guns_34
-    21300034: Ships-Guns_36
-    21300036: Ships-Guns_38
-    21300038: Ships-Guns_42
-    21300040: Ships-Guns_48
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Ships-Guns_0
+  - first:
+      213: 21300002
+    second: Ships-Guns_1
+  - first:
+      213: 21300004
+    second: Ships-Guns_2
+  - first:
+      213: 21300006
+    second: Ships-Guns_3
+  - first:
+      213: 21300008
+    second: Ships-Guns_4
+  - first:
+      213: 21300010
+    second: Ships-Guns_5
+  - first:
+      213: 21300012
+    second: Ships-Guns_6
+  - first:
+      213: 21300014
+    second: Ships-Guns_7
+  - first:
+      213: 21300016
+    second: Ships-Guns_8
+  - first:
+      213: 21300018
+    second: Ships-Guns_11
+  - first:
+      213: 21300020
+    second: Ships-Guns_15
+  - first:
+      213: 21300022
+    second: Ships-Guns_17
+  - first:
+      213: 21300024
+    second: Ships-Guns_20
+  - first:
+      213: 21300026
+    second: Ships-Guns_25
+  - first:
+      213: 21300028
+    second: Ships-Guns_29
+  - first:
+      213: 21300030
+    second: Ships-Guns_32
+  - first:
+      213: 21300032
+    second: Ships-Guns_34
+  - first:
+      213: 21300034
+    second: Ships-Guns_36
+  - first:
+      213: 21300036
+    second: Ships-Guns_38
+  - first:
+      213: 21300038
+    second: Ships-Guns_42
+  - first:
+      213: 21300040
+    second: Ships-Guns_48
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -41,37 +84,60 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Ships-Guns_0
+    - serializedVersion: 2
+      name: Ships-Guns_0
       rect:
         serializedVersion: 2
         x: 1474
@@ -81,15 +147,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 15.838318, y: 126.38861}
-        - {x: -17.161682, y: 126.38861}
-        - {x: -47.161682, y: 38.38861}
-        - {x: -47.161682, y: -39.61139}
-        - {x: 47.838318, y: -39.61139}
-        - {x: 47.838318, y: 35.38861}
-        - {x: 38.838318, y: 42.38861}
-    - name: Ships-Guns_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_1
       rect:
         serializedVersion: 2
         x: 1829
@@ -99,16 +168,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -47.572693, y: 159.18628}
-        - {x: -56.572693, y: 79.18628}
-        - {x: -56.572693, y: -33.81372}
-        - {x: -38.572693, y: -49.81372}
-        - {x: 55.427307, y: -49.81372}
-        - {x: 57.427307, y: -39.81372}
-        - {x: 57.427307, y: 94.18628}
-        - {x: 40.427307, y: 159.18628}
-    - name: Ships-Guns_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_2
       rect:
         serializedVersion: 2
         x: 2205
@@ -118,17 +189,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 20.453918, y: 198.39569}
-        - {x: -19.546082, y: 198.39569}
-        - {x: -47.54608, y: 55.39569}
-        - {x: -47.54608, y: -39.60431}
-        - {x: -29.546082, y: -65.60431}
-        - {x: 27.453918, y: -65.60431}
-        - {x: 30.453918, y: -62.60431}
-        - {x: 48.45392, y: -40.60431}
-        - {x: 48.45392, y: 65.39569}
-    - name: Ships-Guns_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_3
       rect:
         serializedVersion: 2
         x: 2494
@@ -138,12 +210,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.33}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -80.546875, y: 89.61499}
-        - {x: -80.546875, y: -43.38501}
-        - {x: 81.453125, y: -43.38501}
-        - {x: 81.453125, y: 89.61499}
-    - name: Ships-Guns_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_4
       rect:
         serializedVersion: 2
         x: 1427
@@ -153,16 +231,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.26}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -32.164978, y: 84.53876}
-        - {x: -50.164978, y: 27.538757}
-        - {x: -50.164978, y: -20.461243}
-        - {x: -39.164978, y: -29.461243}
-        - {x: 48.835022, y: -29.461243}
-        - {x: 50.835022, y: -24.461243}
-        - {x: 50.835022, y: 50.538757}
-        - {x: 33.835022, y: 84.53876}
-    - name: Ships-Guns_5
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_5
       rect:
         serializedVersion: 2
         x: 1829
@@ -172,14 +252,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -25.572693, y: 144.6977}
-        - {x: -37.572693, y: 135.6977}
-        - {x: -37.572693, y: -45.302307}
-        - {x: 38.427307, y: -45.302307}
-        - {x: 38.427307, y: 107.69769}
-        - {x: 19.427307, y: 144.6977}
-    - name: Ships-Guns_6
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_6
       rect:
         serializedVersion: 2
         x: 2231
@@ -189,16 +273,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -36.480408, y: -26.962158}
-        - {x: -21.480408, y: -45.96216}
-        - {x: 10.519592, y: -45.96216}
-        - {x: 37.519592, y: -28.962158}
-        - {x: 37.519592, y: 2.0378418}
-        - {x: 12.519592, y: 47.03784}
-        - {x: -11.480408, y: 47.03784}
-        - {x: -36.480408, y: -4.962158}
-    - name: Ships-Guns_7
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_7
       rect:
         serializedVersion: 2
         x: 2452
@@ -208,17 +294,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -46.42224, y: -18.05194}
-        - {x: -46.42224, y: -41.05194}
-        - {x: -25.422241, y: -65.05194}
-        - {x: 18.577759, y: -65.05194}
-        - {x: 47.57776, y: -51.05194}
-        - {x: 47.57776, y: -4.051941}
-        - {x: 9.577759, y: 65.94806}
-        - {x: -9.422241, y: 65.94806}
-        - {x: -11.422241, y: 59.94806}
-    - name: Ships-Guns_8
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_8
       rect:
         serializedVersion: 2
         x: 2731
@@ -228,16 +315,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -11.679077, y: 47.62433}
-        - {x: -36.679077, y: -8.375671}
-        - {x: -36.679077, y: -19.375671}
-        - {x: -18.679077, y: -46.37567}
-        - {x: 9.320923, y: -46.37567}
-        - {x: 37.320923, y: -29.375671}
-        - {x: 37.320923, y: -3.3756714}
-        - {x: 13.320923, y: 47.62433}
-    - name: Ships-Guns_11
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_11
       rect:
         serializedVersion: 2
         x: 0
@@ -247,48 +336,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -100, y: 61.578552}
-        - {x: -163, y: -20.421448}
-        - {x: -163, y: -106.42145}
-        - {x: -156, y: -106.42145}
-        - {x: -92, y: -77.42145}
-        - {x: -91, y: -67.42145}
-        - {x: -91, y: 61.578552}
-      - - {x: 91, y: 61.578552}
-        - {x: 89, y: 60.578552}
-        - {x: 89, y: -67.42145}
-        - {x: 90, y: -72.42145}
-        - {x: 154, y: -106.42145}
-        - {x: 163, y: -106.42145}
-        - {x: 163, y: -28.421448}
-        - {x: 97, y: 61.578552}
-      - - {x: 65, y: 70.57855}
-        - {x: 52, y: 70.57855}
-        - {x: 52, y: -69.42145}
-        - {x: 62, y: -97.42145}
-        - {x: 64, y: -98.42145}
-        - {x: 69, y: -98.42145}
-        - {x: 89, y: -71.42145}
-        - {x: 89, y: 64.57855}
-      - - {x: -69, y: 71.57855}
-        - {x: -90, y: 60.578552}
-        - {x: -90, y: -66.42145}
-        - {x: -69, y: -97.42145}
-        - {x: -62, y: -97.42145}
-        - {x: -53, y: -71.42145}
-        - {x: -53, y: 70.57855}
-        - {x: -55, y: 71.57855}
-      - - {x: 17, y: 107.57855}
-        - {x: -23, y: 107.57855}
-        - {x: -52, y: 68.57855}
-        - {x: -52, y: -62.421448}
-        - {x: -45, y: -69.42145}
-        - {x: 45, y: -69.42145}
-        - {x: 51, y: -68.42145}
-        - {x: 51, y: 42.578552}
-        - {x: 27, y: 97.57855}
-    - name: Ships-Guns_15
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_15
       rect:
         serializedVersion: 2
         x: 1007
@@ -298,33 +357,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -31.918121, y: 120.28165}
-        - {x: -31.918121, y: -82.71835}
-        - {x: -29.918121, y: -94.71835}
-        - {x: 29.081879, y: -94.71835}
-        - {x: 33.08188, y: -91.71835}
-        - {x: 33.08188, y: 58.281647}
-        - {x: 19.081879, y: 177.28165}
-        - {x: -11.918121, y: 177.28165}
-        - {x: -14.918121, y: 173.28165}
-      - - {x: -115.91812, y: 27.281647}
-        - {x: -115.91812, y: -40.718353}
-        - {x: -43.91812, y: -76.71835}
-        - {x: -35.91812, y: -76.71835}
-        - {x: -32.91812, y: -75.71835}
-        - {x: -32.91812, y: 42.281647}
-        - {x: -33.91812, y: 45.281647}
-        - {x: -43.91812, y: 45.281647}
-        - {x: -113.91812, y: 29.281647}
-      - - {x: 34.08188, y: 45.281647}
-        - {x: 34.08188, y: -76.71835}
-        - {x: 50.08188, y: -76.71835}
-        - {x: 87.08188, y: -69.71835}
-        - {x: 117.08188, y: -41.718353}
-        - {x: 117.08188, y: 31.281647}
-        - {x: 48.08188, y: 45.281647}
-    - name: Ships-Guns_17
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_17
       rect:
         serializedVersion: 2
         x: 1815
@@ -334,31 +378,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -22.531128, y: 185.97101}
-        - {x: -63.531128, y: 168.97101}
-        - {x: -97.53113, y: 0.9710083}
-        - {x: -97.53113, y: -68.02899}
-        - {x: -23.531128, y: -123.02899}
-        - {x: -13.531128, y: -123.02899}
-        - {x: -13.531128, y: 185.97101}
-      - - {x: 24.468872, y: 185.97101}
-        - {x: 15.468872, y: 185.97101}
-        - {x: 15.468872, y: -121.02899}
-        - {x: 17.468872, y: -123.02899}
-        - {x: 25.468872, y: -123.02899}
-        - {x: 98.46887, y: -67.02899}
-        - {x: 98.46887, y: 2.9710083}
-        - {x: 64.46887, y: 168.97101}
-      - - {x: -11.531128, y: 130.97101}
-        - {x: -13.531128, y: 126.97101}
-        - {x: -13.531128, y: -102.02899}
-        - {x: -9.531128, y: -105.02899}
-        - {x: 10.468872, y: -105.02899}
-        - {x: 14.468872, y: -102.02899}
-        - {x: 14.468872, y: 127.97101}
-        - {x: 13.468872, y: 130.97101}
-    - name: Ships-Guns_20
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_20
       rect:
         serializedVersion: 2
         x: 2515
@@ -368,30 +399,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 28.390747, y: 182.5765}
-        - {x: 18.390747, y: 182.5765}
-        - {x: 1.3907471, y: 176.5765}
-        - {x: 0.39074707, y: 171.5765}
-        - {x: 0.39074707, y: -11.423492}
-        - {x: 2.390747, y: -13.423492}
-        - {x: -1.6092529, y: -13.423492}
-        - {x: 0.39074707, y: -10.423492}
-        - {x: 0.39074707, y: 20.576508}
-        - {x: -1.6092529, y: 22.576508}
-        - {x: 0.39074707, y: 28.576508}
-        - {x: 0.39074707, y: 170.5765}
-        - {x: -4.609253, y: 175.5765}
-        - {x: -7.609253, y: 182.5765}
-        - {x: -52.609253, y: 182.5765}
-        - {x: -130.60925, y: 36.576508}
-        - {x: -130.60925, y: -6.4234924}
-        - {x: -55.609253, y: -60.423492}
-        - {x: 62.390747, y: -60.423492}
-        - {x: 131.39075, y: -29.423492}
-        - {x: 131.39075, y: 31.576508}
-        - {x: 130.39075, y: 32.576508}
-    - name: Ships-Guns_25
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_25
       rect:
         serializedVersion: 2
         x: 3295
@@ -401,32 +420,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -50.13916, y: 89.41232}
-        - {x: -88.13916, y: 79.41232}
-        - {x: -159.13916, y: -36.587677}
-        - {x: -159.13916, y: -75.58768}
-        - {x: -142.13916, y: -97.58768}
-        - {x: -101.13916, y: -97.58768}
-        - {x: -22.13916, y: -70.58768}
-        - {x: -22.13916, y: 89.41232}
-      - - {x: -20.13916, y: 98.41232}
-        - {x: -20.13916, y: -90.58768}
-        - {x: -14.13916, y: -96.58768}
-        - {x: -11.13916, y: -97.58768}
-        - {x: 10.86084, y: -97.58768}
-        - {x: 16.86084, y: -79.58768}
-        - {x: 16.86084, y: 89.41232}
-        - {x: 7.86084, y: 98.41232}
-      - - {x: 17.86084, y: 89.41232}
-        - {x: 17.86084, y: -68.58768}
-        - {x: 23.86084, y: -73.58768}
-        - {x: 114.86084, y: -97.58768}
-        - {x: 133.86084, y: -97.58768}
-        - {x: 158.86084, y: -78.58768}
-        - {x: 158.86084, y: -51.587677}
-        - {x: 90.86084, y: 89.41232}
-    - name: Ships-Guns_29
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_29
       rect:
         serializedVersion: 2
         x: 4223
@@ -436,28 +441,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -115.17993, y: 176.65396}
-        - {x: -125.17993, y: 176.65396}
-        - {x: -125.17993, y: -94.34604}
-        - {x: -42.17993, y: -94.34604}
-        - {x: -42.17993, y: 119.65396}
-        - {x: -91.17993, y: 161.65396}
-      - - {x: 118.82007, y: 176.65396}
-        - {x: 43.82007, y: 129.65396}
-        - {x: 43.82007, y: -94.34604}
-        - {x: 125.82007, y: -94.34604}
-        - {x: 125.82007, y: 176.65396}
-      - - {x: 9.820068, y: 64.65396}
-        - {x: -5.1799316, y: 64.65396}
-        - {x: -41.17993, y: 44.65396}
-        - {x: -41.17993, y: -35.34604}
-        - {x: -40.17993, y: -44.34604}
-        - {x: -2.1799316, y: -76.34604}
-        - {x: 9.820068, y: -76.34604}
-        - {x: 43.82007, y: -39.34604}
-        - {x: 43.82007, y: 47.65396}
-    - name: Ships-Guns_32
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_32
       rect:
         serializedVersion: 2
         x: 156
@@ -467,30 +462,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -83.60598, y: -12.177055}
-        - {x: -83.60598, y: -40.177055}
-        - {x: -81.60598, y: -48.177055}
-        - {x: -47.60598, y: -85.177055}
-        - {x: -26.60598, y: -85.177055}
-        - {x: -18.60598, y: -54.177055}
-        - {x: -18.60598, y: -12.177055}
-      - - {x: 19.39402, y: -12.177055}
-        - {x: 19.39402, y: -41.177055}
-        - {x: 24.39402, y: -85.177055}
-        - {x: 49.39402, y: -85.177055}
-        - {x: 59.39402, y: -81.177055}
-        - {x: 84.39402, y: -38.177055}
-        - {x: 84.39402, y: -12.177055}
-      - - {x: -45.60598, y: 128.82294}
-        - {x: -83.60598, y: 59.822945}
-        - {x: -83.60598, y: -31.177055}
-        - {x: -47.60598, y: -39.177055}
-        - {x: 57.39402, y: -39.177055}
-        - {x: 84.39402, y: -13.177055}
-        - {x: 84.39402, y: 67.822945}
-        - {x: 46.39402, y: 128.82294}
-    - name: Ships-Guns_34
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_34
       rect:
         serializedVersion: 2
         x: 835
@@ -500,35 +483,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -53.121765, y: 158.4902}
-        - {x: -60.121765, y: 158.4902}
-        - {x: -65.121765, y: 147.4902}
-        - {x: -97.121765, y: 65.4902}
-        - {x: -97.121765, y: -64.5098}
-        - {x: -73.121765, y: -94.5098}
-        - {x: -38.121765, y: -94.5098}
-        - {x: -33.121765, y: -72.5098}
-        - {x: -33.121765, y: 113.4902}
-        - {x: -51.121765, y: 157.4902}
-      - - {x: -16.121765, y: 176.4902}
-        - {x: -27.121765, y: 171.4902}
-        - {x: -32.121765, y: 89.4902}
-        - {x: -32.121765, y: -86.5098}
-        - {x: -20.121765, y: -94.5098}
-        - {x: 29.878235, y: -94.5098}
-        - {x: 32.878235, y: -77.5098}
-        - {x: 32.878235, y: 148.4902}
-        - {x: 15.878235, y: 176.4902}
-      - - {x: 33.878235, y: -68.5098}
-        - {x: 40.878235, y: -94.5098}
-        - {x: 79.878235, y: -94.5098}
-        - {x: 97.878235, y: -79.5098}
-        - {x: 97.878235, y: 57.490196}
-        - {x: 81.878235, y: 158.4902}
-        - {x: 50.878235, y: 158.4902}
-        - {x: 33.878235, y: 95.4902}
-    - name: Ships-Guns_36
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_36
       rect:
         serializedVersion: 2
         x: 1494
@@ -538,27 +504,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -101.6496, y: -39.91937}
-        - {x: -94.6496, y: -62.91937}
-        - {x: -33.649597, y: -62.91937}
-        - {x: 1.3504028, y: -48.91937}
-        - {x: 1.3504028, y: 50.08063}
-        - {x: -42.649597, y: 189.08063}
-        - {x: -84.6496, y: 189.08063}
-        - {x: -86.6496, y: 188.08063}
-        - {x: -101.6496, y: 143.08063}
-      - - {x: 85.3504, y: 189.08063}
-        - {x: 77.3504, y: 189.08063}
-        - {x: 76.3504, y: 188.08063}
-        - {x: 1.3504028, y: 22.080631}
-        - {x: 1.3504028, y: -24.919369}
-        - {x: 77.3504, y: -62.91937}
-        - {x: 99.3504, y: -62.91937}
-        - {x: 103.3504, y: -34.91937}
-        - {x: 103.3504, y: 122.08063}
-        - {x: 86.3504, y: 187.08063}
-    - name: Ships-Guns_38
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_38
       rect:
         serializedVersion: 2
         x: 2290
@@ -568,38 +525,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 1.130127, y: -49.29194}
-        - {x: 0.13012695, y: -71.29194}
-        - {x: 37.130127, y: -100.29194}
-        - {x: 47.130127, y: -100.29194}
-        - {x: 47.130127, y: 3.7080612}
-        - {x: 23.130127, y: 151.70807}
-        - {x: -7.869873, y: 151.70807}
-        - {x: -9.869873, y: 148.70807}
-        - {x: -36.869873, y: 45.70806}
-        - {x: -45.869873, y: -78.29194}
-        - {x: -45.869873, y: -100.29194}
-        - {x: -35.869873, y: -100.29194}
-        - {x: 0.13012695, y: -71.29194}
-        - {x: 0.13012695, y: -48.29194}
-        - {x: -2.869873, y: -45.29194}
-      - - {x: -129.86987, y: -6.291939}
-        - {x: -128.86987, y: -7.291939}
-        - {x: -50.869873, y: -35.29194}
-        - {x: -38.869873, y: -35.29194}
-        - {x: -36.869873, y: -34.29194}
-        - {x: -36.869873, y: 48.70806}
-        - {x: -51.869873, y: 48.70806}
-        - {x: -99.86987, y: 32.70806}
-        - {x: -129.86987, y: 19.708061}
-      - - {x: 39.130127, y: 48.70806}
-        - {x: 39.130127, y: -35.29194}
-        - {x: 53.130127, y: -35.29194}
-        - {x: 131.13013, y: -8.291939}
-        - {x: 131.13013, y: 24.708061}
-        - {x: 52.130127, y: 48.70806}
-    - name: Ships-Guns_42
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_42
       rect:
         serializedVersion: 2
         x: 3941
@@ -609,37 +546,18 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -62.69983, y: 144.16483}
-        - {x: -66.69983, y: 144.16483}
-        - {x: -71.69983, y: 142.16483}
-        - {x: -106.69983, y: 86.16483}
-        - {x: -106.69983, y: -126.83517}
-        - {x: -93.69983, y: -126.83517}
-        - {x: -71.69983, y: -120.83517}
-        - {x: -61.69983, y: -108.83517}
-        - {x: -61.69983, y: 141.16483}
-      - - {x: -60.69983, y: 49.164833}
-        - {x: -60.69983, y: -109.83517}
-        - {x: -42.69983, y: -126.83517}
-        - {x: 42.30017, y: -126.83517}
-        - {x: 61.30017, y: -107.83517}
-        - {x: 61.30017, y: 49.164833}
-      - - {x: 65.30017, y: 144.16483}
-        - {x: 62.30017, y: 142.16483}
-        - {x: 62.30017, y: -108.83517}
-        - {x: 96.30017, y: -126.83517}
-        - {x: 107.30017, y: -126.83517}
-        - {x: 107.30017, y: 90.16483}
-        - {x: 72.30017, y: 144.16483}
-      - - {x: -12.699829, y: 190.16483}
-        - {x: -60.69983, y: 152.16483}
-        - {x: -60.69983, y: 53.164833}
-        - {x: -59.69983, y: 50.164833}
-        - {x: 61.30017, y: 50.164833}
-        - {x: 61.30017, y: 156.16483}
-        - {x: 8.300171, y: 190.16483}
-    - name: Ships-Guns_48
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ships-Guns_48
       rect:
         serializedVersion: 2
         x: 3183
@@ -649,25 +567,29 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 25.69336, y: 183.13126}
-        - {x: 0.6933594, y: 164.13126}
-        - {x: 1.6933594, y: 46.13125}
-        - {x: 4.6933594, y: 43.13125}
-        - {x: 0.6933594, y: 45.13125}
-        - {x: 0.6933594, y: 163.13126}
-        - {x: 1.6933594, y: 170.13126}
-        - {x: -23.30664, y: 183.13126}
-        - {x: -40.30664, y: 183.13126}
-        - {x: -73.30664, y: 38.13125}
-        - {x: -73.30664, y: -12.868752}
-        - {x: -49.30664, y: -77.86875}
-        - {x: 51.69336, y: -77.86875}
-        - {x: 74.69336, y: -22.868752}
-        - {x: 74.69336, y: 46.13125}
-        - {x: 43.69336, y: 183.13126}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
