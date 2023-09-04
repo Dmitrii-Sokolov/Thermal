@@ -35,7 +35,8 @@ public class ShotLaser : MonoBehaviour {
 
         if (line)
         {
-            line.SetColors(color1, color2);
+            line.startColor = color1;
+            line.endColor = color2;
             line.SetPosition(0, transform.position);
             line.SetPosition(1, transform.position + (Vector3) trace * range);
         }
@@ -62,8 +63,10 @@ public class ShotLaser : MonoBehaviour {
         if (alpha<0)
             gameObject.GetComponent<PoolObject>().ReturnToPool();
         else
-            line.SetColors(new Color(color1.r, color1.g, color1.b, alpha), new Color(color2.r, color2.g, color2.b, alpha));
-
+        {
+            line.startColor = new Color(color1.r, color1.g, color1.b, alpha);
+            line.endColor =  new Color(color2.r, color2.g, color2.b, alpha);
+        }
     }
 
 }

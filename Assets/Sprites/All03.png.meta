@@ -156,7 +156,7 @@ TextureImporter:
       213: 21300100
     second: All03_50
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -173,9 +173,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -184,9 +187,9 @@ TextureImporter:
   maxTextureSize: 8192
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: 16
-    mipBias: -100
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -207,9 +210,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -221,6 +230,46 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1307,9 +1356,60 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      All03_0: 21300000
+      All03_1: 21300002
+      All03_10: 21300020
+      All03_11: 21300022
+      All03_12: 21300024
+      All03_13: 21300026
+      All03_14: 21300028
+      All03_15: 21300030
+      All03_16: 21300032
+      All03_17: 21300034
+      All03_18: 21300036
+      All03_19: 21300038
+      All03_2: 21300004
+      All03_20: 21300040
+      All03_21: 21300042
+      All03_22: 21300044
+      All03_23: 21300046
+      All03_24: 21300048
+      All03_25: 21300050
+      All03_26: 21300052
+      All03_27: 21300054
+      All03_28: 21300056
+      All03_29: 21300058
+      All03_3: 21300006
+      All03_30: 21300060
+      All03_31: 21300062
+      All03_32: 21300064
+      All03_33: 21300066
+      All03_34: 21300068
+      All03_35: 21300070
+      All03_36: 21300072
+      All03_37: 21300074
+      All03_38: 21300076
+      All03_39: 21300078
+      All03_4: 21300008
+      All03_40: 21300080
+      All03_41: 21300082
+      All03_42: 21300084
+      All03_43: 21300086
+      All03_44: 21300088
+      All03_45: 21300090
+      All03_46: 21300092
+      All03_47: 21300094
+      All03_48: 21300096
+      All03_49: 21300098
+      All03_5: 21300010
+      All03_50: 21300100
+      All03_6: 21300012
+      All03_7: 21300014
+      All03_8: 21300016
+      All03_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
