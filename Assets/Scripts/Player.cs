@@ -56,7 +56,7 @@ public class Player : MonoBehaviour {
         else
             body.angularVelocity = 0f;
 
-        body.velocity += (goal_velocity - body.velocity) * VelocityRate;
+        body.linearVelocity += (goal_velocity - body.linearVelocity) * VelocityRate;
 
         for (int i = 0; i < Guns.Count; i++)
         {

@@ -27,11 +27,11 @@ public class ShotBullet : MonoBehaviour {
         look.color = new Color(Random.Range(color1.r, color2.r), Random.Range(color1.g, color2.g), Random.Range(color1.b, color2.b));
         targets = targets_new;
         damage = damage_new;
-        myrig.velocity = speed;
-        if (myrig.velocity.x < 0)
-            myrig.rotation = Vector2.Angle(Vector2.up, myrig.velocity);
+        myrig.linearVelocity = speed;
+        if (myrig.linearVelocity.x < 0)
+            myrig.rotation = Vector2.Angle(Vector2.up, myrig.linearVelocity);
         else
-            myrig.rotation = 360 - Vector2.Angle(Vector2.up, myrig.velocity);
+            myrig.rotation = 360 - Vector2.Angle(Vector2.up, myrig.linearVelocity);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -48,7 +48,7 @@ public class ShotBullet : MonoBehaviour {
 
             rig = other.GetComponent<Rigidbody2D>();
             if (rig)
-                rig.AddForceAtPosition(damage*myrig.velocity, transform.position, ForceMode2D.Impulse);
+                rig.AddForceAtPosition(damage*myrig.linearVelocity, transform.position, ForceMode2D.Impulse);
 
             gameObject.GetComponent<PoolObject>().ReturnToPool();
         }

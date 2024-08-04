@@ -100,7 +100,7 @@ public class AI03 : MonoBehaviour {
 
             rig = other.GetComponent<Rigidbody2D>();
             if (rig && body)
-                rig.AddForceAtPosition(damage * body.velocity, transform.position, ForceMode2D.Impulse);
+                rig.AddForceAtPosition(damage * body.linearVelocity, transform.position, ForceMode2D.Impulse);
 
             gameObject.GetComponent<Destructible>().Destruct();
         }
@@ -151,7 +151,7 @@ public class AI03 : MonoBehaviour {
                 break;
 
             case gunfire_pattern.anywhere:
-                if (body.velocity.x > 0)
+                if (body.linearVelocity.x > 0)
                     target = (Vector2) transform.position + Vector2.right;
                 else
                     target = (Vector2) transform.position + Vector2.left;
@@ -178,7 +178,7 @@ public class AI03 : MonoBehaviour {
 
     void FixedUpdate()
     {
-        body.velocity += (goal_velocity - body.velocity) * VelocityRate;
+        body.linearVelocity += (goal_velocity - body.linearVelocity) * VelocityRate;
         body.angularVelocity = speed_rotary * Mathf.Clamp(Mathf.DeltaAngle(body.rotation, goal_rotation) / AngularDamp, -1, 1);
     }
 }

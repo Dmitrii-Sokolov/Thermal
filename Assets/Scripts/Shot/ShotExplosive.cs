@@ -34,13 +34,13 @@ public class ShotExplosive : MonoBehaviour {
         targets = targets_new;
         damage = damage_new;
         radius = 5f * radius_mod;
-        myrig.velocity = speed;
+        myrig.linearVelocity = speed;
         time_end = Time.time + Mathf.Sqrt((point_end - (Vector2) transform.position).sqrMagnitude / speed.sqrMagnitude);
 
-        if (myrig.velocity.x < 0)
-            myrig.rotation = Vector2.Angle(Vector2.up, myrig.velocity);
+        if (myrig.linearVelocity.x < 0)
+            myrig.rotation = Vector2.Angle(Vector2.up, myrig.linearVelocity);
         else
-            myrig.rotation = 360 - Vector2.Angle(Vector2.up, myrig.velocity);
+            myrig.rotation = 360 - Vector2.Angle(Vector2.up, myrig.linearVelocity);
     }
 
     void FixedUpdate()
