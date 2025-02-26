@@ -1,7 +1,5 @@
-﻿using UnityEngine;
-using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -21,7 +19,7 @@ public class LevelManager : MonoBehaviour
     public string fieldcenter = "Center";
     public int EnemyCount = 0;
 
-    private List<BoxCollider2D> box = new List<BoxCollider2D>();
+    private List<BoxCollider2D> box = new();
 
     private int difficulty = 1;
     private int wave_count = 0;
@@ -50,17 +48,17 @@ public class LevelManager : MonoBehaviour
         public List<EnemyDanger> mix;
     }
 
-    void Awake()
+    private void Awake()
     {
         difficulty = PlayerPrefs.GetInt("Difficulty", 1);
     }
 
     // Use this for initialization
-    void Start()
+    private void Start()
     {
         box.AddRange(GameObject.FindGameObjectWithTag(fieldedge).GetComponents<BoxCollider2D>());
-        height = FindObjectOfType<Camera>().orthographicSize * 2;
-        width = FindObjectOfType<Camera>().aspect * height;
+        height = FindFirstObjectByType<Camera>().orthographicSize * 2;
+        width = FindFirstObjectByType<Camera>().aspect * height;
 
         enemy_pos.Set(0, height / 2 + offset);
         box[0].offset = enemy_pos;
@@ -89,28 +87,28 @@ public class LevelManager : MonoBehaviour
         enemy_pos.Set(width + 4 * offset, height + 4 * offset);
         box[0].size = enemy_pos;
 
-        FindObjectOfType<UIController>().SetWave(wave);
+        FindFirstObjectByType<UIController>().SetWave(wave);
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (WaveBar)
         {
             if (EnemyCount < max_enemy_mod[difficulty])
-                WaveBar.value = 1000 * (wave_count + Mathf.Clamp((-spawntime + Time.time) / (waves[wave].cycle * cycle_mod[difficulty]),-1,0)) / waves[wave].count;
+                WaveBar.value = 1000 * (wave_count + Mathf.Clamp((-spawntime + Time.time) / (waves[wave].cycle * cycle_mod[difficulty]), -1, 0)) / waves[wave].count;
             else
-                WaveBar.value = 1000 * (wave_count-1) / waves[wave].count;
+                WaveBar.value = 1000 * (wave_count - 1) / waves[wave].count;
         }
 
-        if(!player)
+        if (!player)
             player = GameObject.FindGameObjectWithTag("Player");
     }
 
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        if ((Time.time > spawntime)&&(EnemyCount < max_enemy_mod[difficulty]))
+        if (Time.time > spawntime && EnemyCount < max_enemy_mod[difficulty])
         {
             if (wave_count < waves[wave].count)
             {
@@ -131,14 +129,14 @@ public class LevelManager : MonoBehaviour
                 }
                 wave++;
 
-                FindObjectOfType<UIController>().SetWave(wave);
+                FindFirstObjectByType<UIController>().SetWave(wave);
 
                 wave_count = 0;
             }
         }
     }
 
-    void Spawn(List<EnemyDanger> mix_current)
+    private void Spawn(List<EnemyDanger> mix_current)
     {
         enemy_current = ChooseEnemy(mix_current);
 
@@ -169,18 +167,18 @@ public class LevelManager : MonoBehaviour
         PoolManager.GetObject(enemy_current, enemy_pos, enemy_rot);
     }
 
-    string ChooseEnemy(List<EnemyDanger> mix_choose)
+    private string ChooseEnemy(List<EnemyDanger> mix_choose)
     {
         frequencySumPerWave = 0;
 
-        for (int i = 0; i < mix_choose.Count; i++)
+        for (var i = 0; i < mix_choose.Count; i++)
         {
             frequencySumPerWave += mix_choose[i].frequency;
         }
 
         randomPoint = Random.value * frequencySumPerWave;
 
-        for (int i = 0; i < mix_choose.Count; i++)
+        for (var i = 0; i < mix_choose.Count; i++)
         {
             if (randomPoint < mix_choose[i].frequency)
             {

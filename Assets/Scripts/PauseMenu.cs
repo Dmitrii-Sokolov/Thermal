@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour {
+public class PauseMenu : MonoBehaviour
+{
 
 
     public GameObject Panel;
@@ -11,7 +10,7 @@ public class PauseMenu : MonoBehaviour {
     public GameObject Surrender;
     public GameObject Quit;
 
-    void OnEnable()
+    private void OnEnable()
     {
         Time.timeScale = 0;
     }
@@ -38,13 +37,13 @@ public class PauseMenu : MonoBehaviour {
 
     public void pause_surrender_button()
     {
-        FindObjectOfType<UIController>().EndGame();
+        FindFirstObjectByType<UIController>().EndGame();
         Panel.SetActive(!Panel.activeSelf);
     }
 
     public void pause_exit_button()
     {
-        FindObjectOfType<UIController>().EndGame();
+        FindFirstObjectByType<UIController>().EndGame();
         Panel.SetActive(!Panel.activeSelf);
         Application.Quit();
     }
@@ -60,7 +59,7 @@ public class PauseMenu : MonoBehaviour {
         Quit.SetActive(!Quit.activeSelf);
     }
 
-    void OnDisable()
+    private void OnDisable()
     {
         Time.timeScale = 1;
         Surrender.SetActive(false);

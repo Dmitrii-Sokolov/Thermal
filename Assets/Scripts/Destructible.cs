@@ -1,9 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using System.Collections.Generic;
 
-public class Destructible : MonoBehaviour {
+public class Destructible : MonoBehaviour
+{
 
     public float health_max = 2f;
     public int ScoreValue = 2;
@@ -23,13 +23,13 @@ public class Destructible : MonoBehaviour {
     private UIController UI;
     private LevelManager LM;
 
-    void Awake()
+    private void Awake()
     {
-        LM = FindObjectOfType<LevelManager>();
-        UI = FindObjectOfType<UIController>();
+        LM = FindFirstObjectByType<LevelManager>();
+        UI = FindFirstObjectByType<UIController>();
     }
 
-    void OnEnable()
+    private void OnEnable()
     {
         health = health_max;
 
@@ -38,7 +38,8 @@ public class Destructible : MonoBehaviour {
         else
         {
             if (GameObject.Find("PlayerHealth"))
-                HealthBar = GameObject.Find("PlayerHealth").GetComponent<Slider>(); ;
+                HealthBar = GameObject.Find("PlayerHealth").GetComponent<Slider>();
+            ;
         }
 
         if (HealthBar)
@@ -60,7 +61,7 @@ public class Destructible : MonoBehaviour {
 
     public void Repair(float plus)
     {
-        health = Mathf.Clamp(health + plus,0, health_max);
+        health = Mathf.Clamp(health + plus, 0, health_max);
         if (HealthBar)
             HealthBar.value = 1000 * health / health_max;
     }
@@ -90,7 +91,7 @@ public class Destructible : MonoBehaviour {
                 PoolManager.GetObject(loot[Random.Range(0, loot.Count)], transform.position, transform.rotation);
     }
 
-    void OnDisable()
+    private void OnDisable()
     {
         LM.EnemyCount--;
     }

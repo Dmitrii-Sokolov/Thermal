@@ -1,10 +1,10 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
-public class AI03 : MonoBehaviour {
+public class AI03 : MonoBehaviour
+{
 
-    public enum motion_pattern { patrol, random, homing, lead};
+    public enum motion_pattern { patrol, random, homing, lead };
     public enum gunfire_pattern { none, anywhere, focus };
 
     public motion_pattern pattern1 = motion_pattern.patrol;
@@ -27,7 +27,7 @@ public class AI03 : MonoBehaviour {
     private float offset;
     private float height;
 
-    private List<Vector2> track = new List<Vector2>();
+    private List<Vector2> track = new();
     private Vector2 track_single;
     private Vector2 goal_track;
     private float AngularDamp;
@@ -39,15 +39,15 @@ public class AI03 : MonoBehaviour {
     private Rigidbody2D body;
     private Rigidbody2D rig;
 
-    private List<Gun> Guns = new List<Gun>();
+    private List<Gun> Guns = new();
     private Vector2 target;
 
     private GameObject enemy;
 
-    void Awake()
+    private void Awake()
     {
         body = gameObject.GetComponent<Rigidbody2D>();
-        LM = FindObjectOfType<LevelManager>();
+        LM = FindFirstObjectByType<LevelManager>();
         AngularDamp = speed_rotary * Time.fixedDeltaTime;
 
         if (pattern2 != gunfire_pattern.none)
@@ -55,12 +55,12 @@ public class AI03 : MonoBehaviour {
             Guns.Clear();
             Guns.AddRange(GetComponentsInChildren<Gun>());
 
-            for (int i = 0; i < Guns.Count; i++)
+            for (var i = 0; i < Guns.Count; i++)
                 Guns[i].Init(targets, 0);
         }
     }
 
-    void OnEnable()
+    private void OnEnable()
     {
         height = LM.height;
         width = LM.width;
@@ -89,24 +89,24 @@ public class AI03 : MonoBehaviour {
         enemy = GameObject.FindGameObjectWithTag("Player");
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (damage > 0)
-        if (targets.Contains(other.gameObject.tag))
-        {
-            clank = other.gameObject.GetComponent<Destructible>();
-            if (clank)
-                clank.TakeDamage(damage);
+            if (targets.Contains(other.gameObject.tag))
+            {
+                clank = other.gameObject.GetComponent<Destructible>();
+                if (clank)
+                    clank.TakeDamage(damage);
 
-            rig = other.GetComponent<Rigidbody2D>();
-            if (rig && body)
-                rig.AddForceAtPosition(damage * body.linearVelocity, transform.position, ForceMode2D.Impulse);
+                rig = other.GetComponent<Rigidbody2D>();
+                if (rig && body)
+                    rig.AddForceAtPosition(damage * body.linearVelocity, transform.position, ForceMode2D.Impulse);
 
-            gameObject.GetComponent<Destructible>().Destruct();
-        }
+                gameObject.GetComponent<Destructible>().Destruct();
+            }
     }
 
-    void Update()
+    private void Update()
     {
         switch (pattern1)
         {
@@ -117,7 +117,7 @@ public class AI03 : MonoBehaviour {
                 break;
 
             case motion_pattern.random:
-                goal_track = track_single - (Vector2) transform.position;
+                goal_track = track_single - (Vector2)transform.position;
                 if (goal_track.sqrMagnitude < rollout)
                     track_single.Set(Random.Range(-width / 2 + offset, width / 2 - offset), Random.Range(-height / 2 + offset, height / 2 - offset));
                 break;
@@ -137,7 +137,8 @@ public class AI03 : MonoBehaviour {
                 break;
         }
 
-        goal_velocity.Set(-Mathf.Sin(Mathf.Deg2Rad * (body.rotation)), Mathf.Cos(Mathf.Deg2Rad * (body.rotation))); ;
+        goal_velocity.Set(-Mathf.Sin(Mathf.Deg2Rad * body.rotation), Mathf.Cos(Mathf.Deg2Rad * body.rotation));
+        ;
         goal_velocity *= speed;
 
         if (goal_track.x < 0)
@@ -152,13 +153,13 @@ public class AI03 : MonoBehaviour {
 
             case gunfire_pattern.anywhere:
                 if (body.linearVelocity.x > 0)
-                    target = (Vector2) transform.position + Vector2.right;
+                    target = (Vector2)transform.position + Vector2.right;
                 else
-                    target = (Vector2) transform.position + Vector2.left;
+                    target = (Vector2)transform.position + Vector2.left;
 
-                for (int i = 0; i < Guns.Count; i++)
+                for (var i = 0; i < Guns.Count; i++)
                 {
-                    Guns[i].SetFire(enemy && (Time.time > FireStart));
+                    Guns[i].SetFire(enemy && Time.time > FireStart);
                     Guns[i].Aim(target);
                 }
                 break;
@@ -167,16 +168,16 @@ public class AI03 : MonoBehaviour {
                 if (enemy)
                     target = enemy.transform.position;
 
-                for (int i = 0; i < Guns.Count; i++)
+                for (var i = 0; i < Guns.Count; i++)
                 {
-                    Guns[i].SetFire(enemy && (Time.time > FireStart));
+                    Guns[i].SetFire(enemy && Time.time > FireStart);
                     Guns[i].Aim(target);
                 }
                 break;
         }
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         body.linearVelocity += (goal_velocity - body.linearVelocity) * VelocityRate;
         body.angularVelocity = speed_rotary * Mathf.Clamp(Mathf.DeltaAngle(body.rotation, goal_rotation) / AngularDamp, -1, 1);
